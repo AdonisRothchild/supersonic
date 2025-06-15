@@ -165,7 +165,7 @@ public class DateUtils {
         DateTimeFormatter[] dateFormatters =
                 {DateTimeFormatter.ofPattern("yyyyMMdd"), DateTimeFormatter.ofPattern("yyyy-MM-dd"),
                                 DateTimeFormatter.ofPattern("yyyy/MM/dd"),
-                                DateTimeFormatter.ofPattern("yyyy-MM")};
+                                DateTimeFormatter.ofPattern("yyyy-MM"),DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"),};
         for (DateTimeFormatter formatter : dateFormatters) {
             try {
                 return LocalDate.parse(timeString, formatter);

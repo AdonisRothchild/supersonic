@@ -26,7 +26,7 @@ public class QuerySqlReq extends SemanticQueryReq {
         stringBuilder.append("\"modelIds\":").append(modelIds);
         stringBuilder.append(",\"params\":").append(params);
         stringBuilder.append(",\"cacheInfo\":").append(cacheInfo);
-        stringBuilder.append(",\"sql\":").append(sql);
+        stringBuilder.append(",\"sql\":").append(sqlInfo);
         stringBuilder.append('}');
         return stringBuilder.toString();
     }
